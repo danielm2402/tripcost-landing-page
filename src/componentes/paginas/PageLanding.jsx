@@ -1,9 +1,10 @@
 import React from 'react';
 import '../css/style.css'
+import { Link } from 'react-router-dom';
 class PageLanding extends React.Component{
     render(){
         return(
-           <div className="container">
+           <div className="">
                <div className="container__item landing-page-container">
                     <div className="content_wrapper">
                         <header className="header">
@@ -35,7 +36,7 @@ class PageLanding extends React.Component{
                             </div>
                             <div className="ellipse ellipse__outer--thick"></div>
                             <div className="btnStart">
-                            <a href="#">Start</a>
+                            <Link className="as" to="/home">Start</Link>
 
                             </div>
                             

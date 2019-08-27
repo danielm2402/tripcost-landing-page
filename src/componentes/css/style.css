@@ -1,3 +1,4 @@
+@import '~bootstrap/dist/css/bootstrap.css';
 html{
     font-size: 62.5%;
     width: 100%;
@@ -227,7 +228,7 @@ h1{
 
 }
 
-a{
+.as{
     position: absolute;
     top:60%;
     left: 50%;
@@ -248,7 +249,7 @@ a{
     z-index: 1;
 }
 
-a:hover{
+.as:hover{
     animation: animate 8s linear infinite;
 }
 @keyframes animate{
@@ -260,7 +261,7 @@ a:hover{
     }
 }
 
-a:before{
+.as:before{
     content: '';
     position: absolute;
     top: -5px;
@@ -274,3 +275,11 @@ a:before{
     filter: blur(20px);
 }
 
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+     color: white;
+}
+
+.navbar{
+    background-color: #0F3744;
+}

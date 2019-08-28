@@ -10,7 +10,7 @@ class Footer extends React.Component{
                 <div className="container">
                     <div className="row">
                     {/* Column 1*/}
-                    <div className="col-md-6 col-sm-3 text-center">
+                    <div className="col-md-6 col-sm-3 ">
                         <h4>CONTACT</h4>
                         <ul className="list-unstyled">
                             <li className="font">managertripcost@gmail.com</li>
@@ -18,7 +18,7 @@ class Footer extends React.Component{
                         </ul>
                     </div>
                     {/* Column 1*/}
-                    <div className="col-md-6 col-sm-3 text-center">
+                    <div className="col-md-6 col-sm-3 ">
                         <h4>SOCIAL</h4>
                         <ul className="list-unstyled">
                             <li><a href="https://www.instagram.com/tripcost/" target="_blank">Instagram &nbsp;<i class="fab fa-instagram"></i> </a></li>

@@ -14,17 +14,17 @@ import PageContact from './componentes/paginas/PageContact';
 import NotFoundPage from './componentes/paginas/NotFoundPage';
 import PageDetallesReserva from './componentes/paginas/PageDetallesReserva';
 import {PrivateRoute} from './componentes/PrivateRoute';
-
+//<PrivateRoute exact path="/DetalleReserva" component={PageDetallesReserva}/>
 function App() {
 
   return (
     <div>
     <Switch>
       <Route exact path="/" component={PageLanding} />
-        <Route path="/home" component={PageHome} />
-        <Route path="/explore" component={PageExplore} />
-        <Route path="/contact" component={PageContact} />
-        <PrivateRoute exact path="/DetalleReserva" component={PageDetallesReserva}/>
+        <Route exact path="/home" component={PageHome} />
+        <Route exact path="/explore" component={PageExplore} />
+        <Route exact path="/contact" component={PageContact} />
+        <Route exact path="/:id" component={PageDetallesReserva}/>
         <Route component={NotFoundPage}/>
 
       </Switch>

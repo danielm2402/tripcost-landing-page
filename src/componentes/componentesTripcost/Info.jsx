@@ -1,9 +1,13 @@
 import React, { Component } from 'react'
 import { InfoConsumer } from '../context';
 import { Link } from 'react-router-dom';
+import { withRouter } from "react-router-dom";
+import Auth from '../Auth';
 
 
 class Info extends Component {
+
+
     render() {
 
         const {
@@ -24,7 +28,13 @@ class Info extends Component {
                                     <div className="caption">
                                         <h3 className="title">{tnombre}</h3>
                                         <h5 className="title">{tdescripcion}</h5>
-                                        <Link to="" className="button"> VER </Link>
+                                        <button to="" className="button" onClick={
+                                            ()=>{
+                                                Auth.login(()=>{
+                                                    this.props.history.push("/DetalleReserva");
+                                                })
+                                            }
+                                        }> VER </button>
                                     </div>
                                 </div>
                                 <div className="middle"></div>
@@ -41,4 +51,4 @@ class Info extends Component {
         )
     }
 }
-export default Info
+export default withRouter(Info);

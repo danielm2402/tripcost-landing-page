@@ -1,11 +1,20 @@
 import React, { Component } from 'react'
+import {InfoConsumer } from '../context';
+import Auth from '../Auth';
 
  class PageDetallesReserva extends Component {
+
+
+
     render() {
         return (
-            <div>
-                <h1>page detalles...</h1>
-            </div>
+            <button to="" className="button" onClick={
+                ()=>{
+                    Auth.logout(()=>{
+                        this.props.history.push("/home");
+                    })
+                }
+            }> logout </button>    
         )
     }
 }
